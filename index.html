@@ -3,1108 +3,199 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevClash Hackathon Guide 🚀</title>
+    <title>🎮 Hackathon Quest - Choose Your Level!</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="hub-page">
     
-    <!-- HEADER -->
-    <header>
-        <div class="container">
-            <h1>🚀 DevClash Hackathon Survival Guide</h1>
-            <p>Your complete roadmap from zero to hero!</p>
+    <!-- GAME HEADER -->
+    <header class="game-header">
+        <h1>🎮 HACKATHON QUEST</h1>
+        <p class="tagline">Complete all levels to become a Hackathon Master!</p>
+        <div class="progress-bar">
+            <div class="progress-fill" id="overallProgress" style="width: 0%"></div>
+            <span class="progress-text" id="progressText">0/10 Levels Complete</span>
         </div>
     </header>
 
-    <!-- NAVIGATION -->
-    <nav class="nav-bar">
-        <div class="container nav-scroll">
-            <button class="nav-btn active" data-section="checklist">📋 Checklist</button>
-            <button class="nav-btn" data-section="basics">🧠 Vibe Coding</button>
-            <button class="nav-btn" data-section="terminal">⚡ Terminal</button>
-            <button class="nav-btn" data-section="git">🌿 Git Guide</button>
-            <button class="nav-btn" data-section="structure">📂 File Structure</button>
-            <button class="nav-btn" data-section="frontend-backend">🌐 Frontend/Backend</button>
-            <button class="nav-btn" data-section="security">🔐 Security</button>
-            <button class="nav-btn" data-section="reading-code">🧩 Reading Code</button>
-            <button class="nav-btn" data-section="workflow">💻 Workflow</button>
-            <button class="nav-btn" data-section="hosting">🌐 Local Host</button>
-            <button class="nav-btn" data-section="tips">💡 Pro Tips</button>
-        </div>
-    </nav>
-
-    <!-- MAIN CONTENT -->
-    <main class="container">
-
-        <!-- ========== SECTION 1: CHECKLIST ========== -->
-        <section id="checklist" class="content-section active">
-            <h2>📦 Pre-Hackathon Checklist</h2>
+    <!-- LEVEL SELECTION GRID -->
+    <main class="game-hub">
+        <div class="levels-grid">
             
-            <div class="card">
-                <h3>🎒 What to Bring</h3>
-                <div class="checklist">
-                    <label><input type="checkbox"> Laptop + Charger</label>
-                    <label><input type="checkbox"> USB to LAN Converter (IMPORTANT!)</label>
-                    <label><input type="checkbox"> College ID / Valid ID Card</label>
-                    <label><input type="checkbox"> Your Lunch (Dinner provided)</label>
-                    <label><input type="checkbox"> Water bottle & Snacks</label>
-                    <label><input type="checkbox"> Headphones</label>
-                    <label><input type="checkbox"> Power bank (optional)</label>
+            <!-- LEVEL 1 -->
+            <a href="pages/level1.html" class="level-card" data-level="1">
+                <div class="level-badge">LEVEL 1</div>
+                <div class="level-icon">📋</div>
+                <h3>Pre-Hackathon Checklist</h3>
+                <p>Gather your items before the quest begins</p>
+                <div class="level-status" id="status-1">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 2 -->
+            <a href="pages/level2.html" class="level-card" data-level="2">
+                <div class="level-badge">LEVEL 2</div>
+                <div class="level-icon">🧠</div>
+                <h3>Vibe Coding Basics</h3>
+                <p>Learn the golden rules of coding</p>
+                <div class="level-status" id="status-2">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 3 -->
+            <a href="pages/level3.html" class="level-card" data-level="3">
+                <div class="level-badge">LEVEL 3</div>
+                <div class="level-icon">⚡</div>
+                <h3>Terminal Mastery</h3>
+                <p>Command the terminal like a pro</p>
+                <div class="level-status" id="status-3">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 4 -->
+            <a href="pages/level4.html" class="level-card" data-level="4">
+                <div class="level-badge">LEVEL 4</div>
+                <div class="level-icon">🌿</div>
+                <h3>Git Workflow</h3>
+                <p>Master version control</p>
+                <div class="level-status" id="status-4">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 5 -->
+            <a href="pages/level5.html" class="level-card" data-level="5">
+                <div class="level-badge">LEVEL 5</div>
+                <div class="level-icon">📂</div>
+                <h3>File Structure</h3>
+                <p>Organize your code properly</p>
+                <div class="level-status" id="status-5">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 6 -->
+            <a href="pages/level6.html" class="level-card" data-level="6">
+                <div class="level-badge">LEVEL 6</div>
+                <div class="level-icon">🌐</div>
+                <h3>Frontend vs Backend</h3>
+                <p>Understand the connection</p>
+                <div class="level-status" id="status-6">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 7 -->
+            <a href="pages/level7.html" class="level-card" data-level="7">
+                <div class="level-badge">LEVEL 7</div>
+                <div class="level-icon">🔐</div>
+                <h3>Security Secrets</h3>
+                <p>Protect your API keys</p>
+                <div class="level-status" id="status-7">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 8 -->
+            <a href="pages/level8.html" class="level-card" data-level="8">
+                <div class="level-badge">LEVEL 8</div>
+                <div class="level-icon">🧩</div>
+                <h3>Reading AI Code</h3>
+                <p>Decode massive codebases</p>
+                <div class="level-status" id="status-8">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 9 -->
+            <a href="pages/level9.html" class="level-card" data-level="9">
+                <div class="level-badge">LEVEL 9</div>
+                <div class="level-icon">💻</div>
+                <h3>Complete Workflow</h3>
+                <p>The hour-by-hour battle plan</p>
+                <div class="level-status" id="status-9">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+            <!-- LEVEL 10 -->
+            <a href="pages/level10.html" class="level-card" data-level="10">
+                <div class="level-badge">LEVEL 10</div>
+                <div class="level-icon">💡</div>
+                <h3>Pro Tips & Secrets</h3>
+                <p>Winner strategies revealed</p>
+                <div class="level-status" id="status-10">
+                    <span class="status-icon">🔒</span>
+                    <span class="status-text">Not Started</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- ACHIEVEMENT SECTION -->
+        <div class="achievements-panel">
+            <h2>🏆 Your Achievements</h2>
+            <div class="achievements-grid">
+                <div class="achievement locked" id="achievement-1">
+                    <span class="achievement-icon">🎯</span>
+                    <span class="achievement-name">Prepared</span>
+                </div>
+                <div class="achievement locked" id="achievement-2">
+                    <span class="achievement-icon">🧠</span>
+                    <span class="achievement-name">Mindset</span>
+                </div>
+                <div class="achievement locked" id="achievement-3">
+                    <span class="achievement-icon">⚡</span>
+                    <span class="achievement-name">Commander</span>
+                </div>
+                <div class="achievement locked" id="achievement-4">
+                    <span class="achievement-icon">🌿</span>
+                    <span class="achievement-name">Git Master</span>
+                </div>
+                <div class="achievement locked" id="achievement-5">
+                    <span class="achievement-icon">📂</span>
+                    <span class="achievement-name">Organized</span>
+                </div>
+                <div class="achievement locked" id="achievement-6">
+                    <span class="achievement-icon">🌐</span>
+                    <span class="achievement-name">Full Stack</span>
+                </div>
+                <div class="achievement locked" id="achievement-7">
+                    <span class="achievement-icon">🔐</span>
+                    <span class="achievement-name">Secure</span>
+                </div>
+                <div class="achievement locked" id="achievement-8">
+                    <span class="achievement-icon">🧩</span>
+                    <span class="achievement-name">Code Reader</span>
+                </div>
+                <div class="achievement locked" id="achievement-9">
+                    <span class="achievement-icon">💻</span>
+                    <span class="achievement-name">Strategist</span>
+                </div>
+                <div class="achievement locked" id="achievement-10">
+                    <span class="achievement-icon">👑</span>
+                    <span class="achievement-name">CHAMPION</span>
                 </div>
             </div>
-
-            <div class="card">
-                <h3>💻 Software to Install NOW</h3>
-                <div class="checklist">
-                    <label><input type="checkbox"> VS Code (code.visualstudio.com)</label>
-                    <label><input type="checkbox"> Git (git-scm.com)</label>
-                    <label><input type="checkbox"> GitHub Account (github.com)</label>
-                    <label><input type="checkbox"> Live Server Extension (in VS Code)</label>
-                    <label><input type="checkbox"> Python (python.org) - Optional</label>
-                </div>
-            </div>
-
-            <div class="alert alert-warning">
-                <strong>⚠️ CRITICAL:</strong> Test your USB to LAN converter TONIGHT!
-            </div>
-        </section>
-
-        <!-- ========== SECTION 2: VIBE CODING BASICS ========== -->
-        <section id="basics" class="content-section">
-            <h2>🧠 Vibe Coding - The Real Framework</h2>
-
-            <div class="card">
-                <h3>🔥 Golden Rules (Print This Out!)</h3>
-                <div class="rule-grid">
-                    <div class="rule-item">
-                        <div class="rule-icon">🎯</div>
-                        <h4>Google > Memory</h4>
-                        <p>You don't need to memorize. You need to know WHAT to search.</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-icon">📋</div>
-                        <h4>Copy → Understand → Modify</h4>
-                        <p>Don't reinvent. Find working code, understand it, then adapt it.</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-icon">🐛</div>
-                        <h4>Debugging = Real Skill</h4>
-                        <p>Writing code is 20%. Fixing it is 80%. Get good at debugging.</p>
-                    </div>
-                    <div class="rule-item">
-                        <div class="rule-icon">🎈</div>
-                        <h4>Small Wins > Big Ideas</h4>
-                        <p>Make ONE button work. Then add features. Don't build everything at once.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🚀 The 6-Step Vibe Coding Workflow</h3>
-                <div class="workflow-visual">
-                    <div class="workflow-step">
-                        <span class="step-num">1</span>
-                        <div class="step-content">
-                            <h4>💡 IDEA</h4>
-                            <p>What problem are you solving? Keep it simple!</p>
-                        </div>
-                    </div>
-                    <div class="workflow-arrow">↓</div>
-                    <div class="workflow-step">
-                        <span class="step-num">2</span>
-                        <div class="step-content">
-                            <h4>🏗️ SKELETON</h4>
-                            <p>Create basic files: index.html, style.css, script.js</p>
-                        </div>
-                    </div>
-                    <div class="workflow-arrow">↓</div>
-                    <div class="workflow-step">
-                        <span class="step-num">3</span>
-                        <div class="step-content">
-                            <h4>⚡ CORE FEATURE</h4>
-                            <p>Make ONE main thing work (even if ugly)</p>
-                        </div>
-                    </div>
-                    <div class="workflow-arrow">↓</div>
-                    <div class="workflow-step">
-                        <span class="step-num">4</span>
-                        <div class="step-content">
-                            <h4>📦 EXPAND</h4>
-                            <p>Add 2-3 more features, one at a time</p>
-                        </div>
-                    </div>
-                    <div class="workflow-arrow">↓</div>
-                    <div class="workflow-step">
-                        <span class="step-num">5</span>
-                        <div class="step-content">
-                            <h4>🐛 DEBUG</h4>
-                            <p>Fix errors, test everything, break it on purpose</p>
-                        </div>
-                    </div>
-                    <div class="workflow-arrow">↓</div>
-                    <div class="workflow-step">
-                        <span class="step-num">6</span>
-                        <div class="step-content">
-                            <h4>✨ POLISH</h4>
-                            <p>Make it look good, add CSS, prepare presentation</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🧠 Mindset Shift (Why People Fail)</h3>
-                <div class="comparison-table">
-                    <div class="comparison-column wrong">
-                        <h4>❌ Wrong Thinking</h4>
-                        <ul>
-                            <li>"I need to understand everything"</li>
-                            <li>"I must write perfect code"</li>
-                            <li>"I should know all commands"</li>
-                            <li>"My code must be original"</li>
-                        </ul>
-                    </div>
-                    <div class="comparison-column right">
-                        <h4>✅ Correct Thinking</h4>
-                        <ul>
-                            <li>"I need to make it WORK"</li>
-                            <li>"Ugly working > pretty broken"</li>
-                            <li>"Google when I forget"</li>
-                            <li>"Learn from others' code"</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 3: TERMINAL BASICS ========== -->
-        <section id="terminal" class="content-section">
-            <h2>⚡ Terminal Basics (Cannot Skip This!)</h2>
-
-            <div class="alert alert-danger">
-                <strong>🔥 TRUTH BOMB:</strong> If you don't understand terminal → you'll feel LOST in every project!
-            </div>
-
-            <div class="card">
-                <h3>📁 Navigation Commands</h3>
-                <div class="command-grid-modern">
-                    <div class="cmd-box">
-                        <code>pwd</code>
-                        <p>Shows current folder</p>
-                        <span class="cmd-example">Example: /Users/you/Desktop</span>
-                    </div>
-                    <div class="cmd-box">
-                        <code>ls</code>
-                        <p>Lists all files & folders</p>
-                        <span class="cmd-example">See what's in current folder</span>
-                    </div>
-                    <div class="cmd-box">
-                        <code>cd folder-name</code>
-                        <p>Go inside a folder</p>
-                        <span class="cmd-example">cd Desktop → enters Desktop</span>
-                    </div>
-                    <div class="cmd-box">
-                        <code>cd ..</code>
-                        <p>Go back one level</p>
-                        <span class="cmd-example">Like pressing "back" button</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>📁 File Creation Commands</h3>
-                <div class="code-block">
-                    <code># Create a folder
-mkdir my-project
-
-# Create a file (Mac/Linux)
-touch index.html
-
-# Create a file (Windows)
-type nul > index.html
-
-# Create multiple files at once
-touch index.html style.css script.js</code>
-                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🎯 Real Example Workflow</h3>
-                <div class="terminal-demo">
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">cd Desktop</span>
-                        <span class="comment"># Go to Desktop</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">mkdir hackathon-project</span>
-                        <span class="comment"># Create folder</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">cd hackathon-project</span>
-                        <span class="comment"># Enter folder</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">touch index.html style.css script.js</span>
-                        <span class="comment"># Create files</span>
-                    </div>
-                    <div class="terminal-line">
-                        <span class="prompt">$</span>
-                        <span class="command">ls</span>
-                        <span class="comment"># See files you created</span>
-                    </div>
-                    <div class="terminal-output">
-                        index.html  style.css  script.js
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 4: GIT GUIDE ========== -->
-        <section id="git" class="content-section">
-            <h2>🌿 Git - Real Understanding (Not Just Commands)</h2>
-
-            <div class="card">
-                <h3>💡 What Git ACTUALLY Does</h3>
-                <div class="git-explanation">
-                    <div class="git-visual">
-                        <div class="git-box">
-                            <strong>Without Git</strong>
-                            <p>❌ project_v1.zip<br>
-                            ❌ project_v2_final.zip<br>
-                            ❌ project_v2_ACTUAL_final.zip<br>
-                            ❌ Chaos!</p>
-                        </div>
-                        <div class="git-arrow">→</div>
-                        <div class="git-box highlight">
-                            <strong>With Git</strong>
-                            <p>✅ One folder<br>
-                            ✅ All versions saved<br>
-                            ✅ Can go back anytime<br>
-                            ✅ Team can collaborate</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🔁 Core Workflow (The Loop You'll Repeat 100 Times)</h3>
-                <div class="git-workflow">
-                    <div class="git-step">
-                        <div class="step-badge">STEP 1</div>
-                        <code>git init</code>
-                        <p>Start tracking this project</p>
-                        <span class="do-once">⚡ Do once per project</span>
-                    </div>
-                    <div class="git-step">
-                        <div class="step-badge">STEP 2</div>
-                        <code>git status</code>
-                        <p>What files changed?</p>
-                        <span class="do-often">🔄 Do often to check</span>
-                    </div>
-                    <div class="git-step">
-                        <div class="step-badge">STEP 3</div>
-                        <code>git add .</code>
-                        <p>Prepare ALL changes to save</p>
-                        <span class="do-often">🔄 Before every commit</span>
-                    </div>
-                    <div class="git-step">
-                        <div class="step-badge">STEP 4</div>
-                        <code>git commit -m "message"</code>
-                        <p>Save a snapshot with description</p>
-                        <span class="do-often">🔄 Every hour minimum!</span>
-                    </div>
-                    <div class="git-step">
-                        <div class="step-badge">STEP 5</div>
-                        <code>git push</code>
-                        <p>Upload to GitHub (backup)</p>
-                        <span class="do-often">🔄 After every commit</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🧠 Real Example - You Add a Button</h3>
-                <div class="code-block">
-                    <code># You just added a login button to index.html
-# Now save this change:
-
-git add .
-git commit -m "Added login button"
-git push
-
-# Done! This version is saved forever.</code>
-                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🚨 Emergency Commands (When You Mess Up)</h3>
-                <div class="emergency-grid">
-                    <div class="emergency-box">
-                        <h4>😱 Accidentally changed file</h4>
-                        <code>git restore file.js</code>
-                        <p>Undo ALL changes to that file</p>
-                    </div>
-                    <div class="emergency-box">
-                        <h4>😱 Last commit was wrong</h4>
-                        <code>git reset HEAD~1</code>
-                        <p>Undo last commit (keeps changes)</p>
-                    </div>
-                    <div class="emergency-box">
-                        <h4>😱 Want to see what changed</h4>
-                        <code>git diff</code>
-                        <p>Shows exact changes you made</p>
-                    </div>
-                    <div class="emergency-box">
-                        <h4>😱 Everything is broken!</h4>
-                        <code>git log<br>git checkout [old-commit-id]</code>
-                        <p>Go back to when it worked</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 5: FILE STRUCTURE ========== -->
-        <section id="structure" class="content-section">
-            <h2>📂 File Structure (Where Most Beginners Die)</h2>
-
-            <div class="alert alert-warning">
-                <strong>🔥 TRUTH:</strong> Bad file structure = You'll get lost in your own code!
-            </div>
-
-            <div class="card">
-                <h3>🏗️ Basic Structure (For Simple Projects)</h3>
-                <div class="file-tree">
-                    <div class="tree-item folder">
-                        <span class="icon">📁</span> project/
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">📄</span> index.html
-                        <span class="desc">← Main page</span>
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">🎨</span> style.css
-                        <span class="desc">← Design</span>
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">⚡</span> script.js
-                        <span class="desc">← Functionality</span>
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">📝</span> README.md
-                        <span class="desc">← Project description</span>
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">🚫</span> .gitignore
-                        <span class="desc">← Files to ignore</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🏗️ Advanced Structure (With Frontend/Backend)</h3>
-                <div class="file-tree">
-                    <div class="tree-item folder">
-                        <span class="icon">📁</span> project/
-                    </div>
-                    <div class="tree-item folder indent-1">
-                        <span class="icon">📁</span> frontend/
-                    </div>
-                    <div class="tree-item file indent-2">
-                        <span class="icon">📄</span> index.html
-                    </div>
-                    <div class="tree-item file indent-2">
-                        <span class="icon">🎨</span> style.css
-                    </div>
-                    <div class="tree-item file indent-2">
-                        <span class="icon">⚡</span> script.js
-                    </div>
-                    <div class="tree-item folder indent-1">
-                        <span class="icon">📁</span> backend/
-                    </div>
-                    <div class="tree-item file indent-2">
-                        <span class="icon">🐍</span> server.py
-                        <span class="desc">← Python backend</span>
-                    </div>
-                    <div class="tree-item file indent-2">
-                        <span class="icon">🟢</span> app.js
-                        <span class="desc">← Node.js backend</span>
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">🔐</span> .env
-                        <span class="desc">← Secret keys</span>
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">🚫</span> .gitignore
-                    </div>
-                    <div class="tree-item file indent-1">
-                        <span class="icon">📝</span> README.md
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>💡 When You See Confusing Folders in AI Code</h3>
-                <div class="folder-explain">
-                    <div class="folder-box">
-                        <code>src/</code>
-                        <p><strong>Source</strong> - Main code lives here</p>
-                    </div>
-                    <div class="folder-box">
-                        <code>components/</code>
-                        <p><strong>Reusable pieces</strong> - Buttons, cards, etc.</p>
-                    </div>
-                    <div class="folder-box">
-                        <code>utils/</code>
-                        <p><strong>Utilities</strong> - Helper functions</p>
-                    </div>
-                    <div class="folder-box">
-                        <code>services/</code>
-                        <p><strong>API calls</strong> - Talks to backend</p>
-                    </div>
-                    <div class="folder-box">
-                        <code>node_modules/</code>
-                        <p><strong>Libraries</strong> - Downloaded packages (DON'T TOUCH!)</p>
-                    </div>
-                    <div class="folder-box">
-                        <code>dist/</code>
-                        <p><strong>Distribution</strong> - Final built version</p>
-                    </div>
-                </div>
-                <div class="alert alert-info">
-                    <strong>👉 Remember:</strong> Don't panic! It's just organized folders. Start from index.html or app.js!
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 6: FRONTEND VS BACKEND ========== -->
-        <section id="frontend-backend" class="content-section">
-            <h2>🌐 Frontend vs Backend (Crystal Clear)</h2>
-
-            <div class="card">
-                <h3>🎭 The Simple Analogy</h3>
-                <div class="analogy-box">
-                    <div class="analogy-item">
-                        <div class="analogy-icon">🏪</div>
-                        <h4>Frontend = Store Front</h4>
-                        <p>What customers SEE and INTERACT with</p>
-                        <ul>
-                            <li>Display of products</li>
-                            <li>Shopping cart</li>
-                            <li>Pretty design</li>
-                        </ul>
-                    </div>
-                    <div class="analogy-arrow">↔️</div>
-                    <div class="analogy-item">
-                        <div class="analogy-icon">🏭</div>
-                        <h4>Backend = Warehouse</h4>
-                        <p>Behind-the-scenes LOGIC and STORAGE</p>
-                        <ul>
-                            <li>Inventory database</li>
-                            <li>Payment processing</li>
-                            <li>User accounts</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🖥️ Frontend Technologies</h3>
-                <div class="tech-grid">
-                    <div class="tech-box">
-                        <span class="tech-icon">📄</span>
-                        <h4>HTML</h4>
-                        <p>Structure (bones)</p>
-                        <code>&lt;button&gt;Click Me&lt;/button&gt;</code>
-                    </div>
-                    <div class="tech-box">
-                        <span class="tech-icon">🎨</span>
-                        <h4>CSS</h4>
-                        <p>Design (skin)</p>
-                        <code>button { color: blue; }</code>
-                    </div>
-                    <div class="tech-box">
-                        <span class="tech-icon">⚡</span>
-                        <h4>JavaScript</h4>
-                        <p>Interaction (brain)</p>
-                        <code>button.onclick = ...</code>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>⚙️ Backend Technologies</h3>
-                <div class="tech-grid">
-                    <div class="tech-box">
-                        <span class="tech-icon">🟢</span>
-                        <h4>Node.js</h4>
-                        <p>JavaScript for servers</p>
-                    </div>
-                    <div class="tech-box">
-                        <span class="tech-icon">🐍</span>
-                        <h4>Python</h4>
-                        <p>Flask / Django</p>
-                    </div>
-                    <div class="tech-box">
-                        <span class="tech-icon">☕</span>
-                        <h4>Java</h4>
-                        <p>Spring Boot</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🔁 How They Connect</h3>
-                <div class="connection-flow">
-                    <div class="flow-box">Frontend<br><small>(User sees)</small></div>
-                    <div class="flow-arrow">→ API Call →</div>
-                    <div class="flow-box">Backend<br><small>(Processes)</small></div>
-                    <div class="flow-arrow">→ Query →</div>
-                    <div class="flow-box">Database<br><small>(Stores data)</small></div>
-                    <div class="flow-arrow">← Returns Data ←</div>
-                    <div class="flow-box">Backend</div>
-                    <div class="flow-arrow">← JSON Response ←</div>
-                    <div class="flow-box">Frontend</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🧪 Real Example: Login Flow</h3>
-                <div class="example-flow">
-                    <div class="flow-step">
-                        <strong>1. Frontend:</strong>
-                        <p>User clicks "Login" button</p>
-                        <code>fetch('/api/login', { email, password })</code>
-                    </div>
-                    <div class="flow-step">
-                        <strong>2. Backend:</strong>
-                        <p>Receives request, checks database</p>
-                        <code>if (password matches) → send token</code>
-                    </div>
-                    <div class="flow-step">
-                        <strong>3. Frontend:</strong>
-                        <p>Receives response, shows dashboard</p>
-                        <code>if (success) → redirect to /dashboard</code>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 7: SECURITY (.env & .gitignore) ========== -->
-        <section id="security" class="content-section">
-            <h2>🔐 Security Basics (.env & .gitignore)</h2>
-
-            <div class="alert alert-danger">
-                <strong>🚨 CRITICAL:</strong> Leak your API keys = Hackers can use your account = You get charged!
-            </div>
-
-            <div class="card">
-                <h3>🔐 What is .env File?</h3>
-                <div class="env-explanation">
-                    <p><strong>Purpose:</strong> Store secret data that should NEVER be shared</p>
-                    <div class="code-block">
-                        <code># Example .env file
-API_KEY=abcd1234xyz
-DB_PASSWORD=super_secret_password
-JWT_SECRET=my_secret_token
-STRIPE_KEY=sk_test_123456</code>
-                        <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>❌ WRONG vs ✅ RIGHT</h3>
-                <div class="comparison-table">
-                    <div class="comparison-column wrong">
-                        <h4>❌ NEVER DO THIS</h4>
-                        <div class="code-block">
-                            <code>// script.js
-const API_KEY = "abcd1234xyz";
-fetch(url, { key: API_KEY });</code>
-                        </div>
-                        <p class="danger-text">👆 Anyone can see this in your code!</p>
-                    </div>
-                    <div class="comparison-column right">
-                        <h4>✅ DO THIS INSTEAD</h4>
-                        <div class="code-block">
-                            <code>// .env file
-API_KEY=abcd1234xyz
-
-// script.js
-const API_KEY = process.env.API_KEY;
-fetch(url, { key: API_KEY });</code>
-                        </div>
-                        <p class="success-text">👆 Secret stays hidden!</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🚫 What is .gitignore?</h3>
-                <p><strong>Purpose:</strong> Tell Git which files to NEVER upload to GitHub</p>
-                <div class="code-block">
-                    <code># Example .gitignore file
-
-# Never upload these:
-.env
-node_modules/
-dist/
-*.log
-.DS_Store
-
-# Why?
-# .env → has secrets
-# node_modules → too large (1000s of files)
-# dist → auto-generated
-# *.log → debug files</code>
-                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>📋 What to Ignore (Common List)</h3>
-                <div class="ignore-table">
-                    <div class="ignore-row">
-                        <code>.env</code>
-                        <span class="reason">Secret keys & passwords</span>
-                    </div>
-                    <div class="ignore-row">
-                        <code>node_modules/</code>
-                        <span class="reason">Downloaded libraries (too large)</span>
-                    </div>
-                    <div class="ignore-row">
-                        <code>dist/</code>
-                        <span class="reason">Auto-generated build files</span>
-                    </div>
-                    <div class="ignore-row">
-                        <code>*.log</code>
-                        <span class="reason">Debug logs</span>
-                    </div>
-                    <div class="ignore-row">
-                        <code>.DS_Store</code>
-                        <span class="reason">Mac system file (useless)</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="alert alert-warning">
-                <strong>⚡ PRO TIP:</strong> Create .gitignore BEFORE first commit! Add .env to it immediately!
-            </div>
-        </section>
-
-        <!-- ========== SECTION 8: READING LARGE CODE ========== -->
-        <section id="reading-code" class="content-section">
-            <h2>🧩 How to Read Huge AI Code (Game Changer)</h2>
-
-            <div class="card">
-                <h3>😱 The Problem</h3>
-                <div class="problem-box">
-                    <p>You ask ChatGPT for code.</p>
-                    <p>It gives you <strong>1000+ lines</strong> across 10 files.</p>
-                    <p>You stare at it. Your brain freezes. 🧊</p>
-                    <p class="highlight">👉 This section will FIX that!</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>❌ DON'T Do This</h3>
-                <div class="dont-list">
-                    <div class="dont-item">❌ Try reading every line</div>
-                    <div class="dont-item">❌ Start from top</div>
-                    <div class="dont-item">❌ Understand everything first</div>
-                    <div class="dont-item">❌ Give up and refresh ChatGPT</div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>✅ DO This Instead (4-Step System)</h3>
-                <div class="reading-steps">
-                    <div class="reading-step">
-                        <div class="step-badge">STEP 1</div>
-                        <h4>Find the Entry Point</h4>
-                        <p>Look for these files first:</p>
-                        <ul>
-                            <li><code>index.html</code> - For websites</li>
-                            <li><code>index.js</code> or <code>app.js</code> - For Node.js</li>
-                            <li><code>main.py</code> - For Python</li>
-                            <li><code>App.jsx</code> - For React</li>
-                        </ul>
-                        <p class="tip">👉 This is where the program STARTS</p>
-                    </div>
-
-                    <div class="reading-step">
-                        <div class="step-badge">STEP 2</div>
-                        <h4>Find the Flow</h4>
-                        <p>Look for these keywords:</p>
-                        <div class="keyword-grid">
-                            <code>routes</code>
-                            <code>function</code>
-                            <code>fetch</code>
-                            <code>onClick</code>
-                            <code>addEventListener</code>
-                            <code>API</code>
-                        </div>
-                        <p class="tip">👉 These show HOW things connect</p>
-                    </div>
-
-                    <div class="reading-step">
-                        <div class="step-badge">STEP 3</div>
-                        <h4>Use Search (Ctrl + F)</h4>
-                        <p>Search for what YOU care about:</p>
-                        <ul>
-                            <li>Building login? → Search "login"</li>
-                            <li>Want to see API calls? → Search "fetch"</li>
-                            <li>Looking for database? → Search "db" or "database"</li>
-                        </ul>
-                        <p class="tip">👉 Jump straight to relevant code!</p>
-                    </div>
-
-                    <div class="reading-step">
-                        <div class="step-badge">STEP 4</div>
-                        <h4>Break Into Chunks</h4>
-                        <p>Treat code like sections:</p>
-                        <div class="chunk-boxes">
-                            <div class="chunk-box">
-                                <strong>UI</strong>
-                                <p>How it looks</p>
-                            </div>
-                            <div class="chunk-box">
-                                <strong>Logic</strong>
-                                <p>How it works</p>
-                            </div>
-                            <div class="chunk-box">
-                                <strong>API</strong>
-                                <p>How it talks to backend</p>
-                            </div>
-                        </div>
-                        <p class="tip">👉 Understand ONE chunk at a time</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🧪 Real Example</h3>
-                <div class="example-scenario">
-                    <p><strong>Scenario:</strong> ChatGPT gave you a todo app with 800 lines</p>
-                    <div class="example-steps">
-                        <div class="ex-step">
-                            <strong>Step 1:</strong> Open <code>index.html</code>
-                        </div>
-                        <div class="ex-step">
-                            <strong>Step 2:</strong> Press <kbd>Ctrl + F</kbd> → search "todo"
-                        </div>
-                        <div class="ex-step">
-                            <strong>Step 3:</strong> Find <code>addTodo()</code> function
-                        </div>
-                        <div class="ex-step">
-                            <strong>Step 4:</strong> Read just that function (ignore rest)
-                        </div>
-                        <div class="ex-step">
-                            <strong>Step 5:</strong> Run the code, see what <code>addTodo()</code> does
-                        </div>
-                        <div class="ex-step">
-                            <strong>Result:</strong> You understand ONE feature! Repeat for others.
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="alert alert-success">
-                <strong>💡 PRO TIP:</strong> Add <code>console.log()</code> everywhere to see what's happening!
-            </div>
-        </section>
-
-        <!-- ========== SECTION 9: WORKFLOW ========== -->
-        <section id="workflow" class="content-section">
-            <h2>💻 Complete Hackathon Workflow</h2>
-
-            <div class="card">
-                <h3>⏰ Hour-by-Hour Timeline</h3>
-                <div class="timeline-modern">
-                    <div class="timeline-block">
-                        <div class="time-badge">Hour 0</div>
-                        <div class="time-content">
-                            <h4>🏁 Arrival & Setup</h4>
-                            <ul>
-                                <li>Plug in laptop, charger, LAN</li>
-                                <li>Test internet</li>
-                                <li>Open VS Code, browser</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="time-badge">Hour 1</div>
-                        <div class="time-content">
-                            <h4>🧠 Brainstorm</h4>
-                            <ul>
-                                <li>What problem to solve?</li>
-                                <li>What tech do you know?</li>
-                                <li>Pick ONE simple idea</li>
-                                <li>Divide work in team</li>
-                            </ul>
-                            <div class="alert alert-info">
-                                <strong>Rule:</strong> Simple working > Complex broken
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="time-badge">Hour 2-6</div>
-                        <div class="time-content">
-                            <h4>⚡ Build Core Features</h4>
-                            <ul>
-                                <li>Build MAIN feature first (ugly is OK!)</li>
-                                <li>Test every hour</li>
-                                <li>Git commit every hour</li>
-                            </ul>
-                            <div class="code-block">
-                                <code># Every hour:
-git add .
-git commit -m "Added [feature]"
-git push</code>
-                                <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="time-badge">Hour 7-8</div>
-                        <div class="time-content">
-                            <h4>🎨 Make It Look Good</h4>
-                            <ul>
-                                <li>Add CSS styling</li>
-                                <li>Make it mobile-responsive</li>
-                                <li>Fix visual bugs</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="time-badge">Hour 9-10</div>
-                        <div class="time-content">
-                            <h4>🧪 Test & Debug</h4>
-                            <ul>
-                                <li>Click EVERY button</li>
-                                <li>Test on different browsers</li>
-                                <li>Fix critical bugs only</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="timeline-block">
-                        <div class="time-badge">Hour 11</div>
-                        <div class="time-content">
-                            <h4>🎤 Presentation Prep</h4>
-                            <ul>
-                                <li>Create slides (Google Slides)</li>
-                                <li>Practice demo 3 times</li>
-                                <li>Take screenshots</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🚀 Quick Start Template</h3>
-                <div class="code-block">
-                    <code># Copy-paste this in terminal:
-
-mkdir hackathon-project
-cd hackathon-project
-git init
-touch index.html style.css script.js README.md .gitignore
-
-# Add to .gitignore:
-echo "node_modules/" >> .gitignore
-echo ".env" >> .gitignore
-
-# Open in VS Code:
-code .
-
-# Start server:
-# Right-click index.html → Open with Live Server
-# OR
-python -m http.server 8000</code>
-                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 10: LOCAL HOSTING ========== -->
-        <section id="hosting" class="content-section">
-            <h2>🌐 How to Run Your Project Locally</h2>
-
-            <div class="card">
-                <h3>🏆 Method 1: VS Code Live Server (BEST!)</h3>
-                <div class="method-steps">
-                    <div class="method-step">
-                        <span class="step-num">1</span>
-                        <p>Install "Live Server" extension in VS Code</p>
-                    </div>
-                    <div class="method-step">
-                        <span class="step-num">2</span>
-                        <p>Open your project folder</p>
-                    </div>
-                    <div class="method-step">
-                        <span class="step-num">3</span>
-                        <p>Right-click index.html → "Open with Live Server"</p>
-                    </div>
-                    <div class="method-step">
-                        <span class="step-num">4</span>
-                        <p>Browser opens at <code>http://localhost:5500</code> ✅</p>
-                    </div>
-                </div>
-                <div class="alert alert-success">
-                    <strong>Magic:</strong> Auto-refreshes on every save!
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🐍 Method 2: Python Server</h3>
-                <div class="code-block">
-                    <code># Navigate to project
-cd Desktop/hackathon-project
-
-# Start server
-python -m http.server 8000
-
-# Open browser:
-# http://localhost:8000
-
-# Stop: Ctrl + C</code>
-                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>📱 Share with Teammates (Same WiFi)</h3>
-                <ol>
-                    <li>Find your IP: <code>ipconfig</code> (Windows) or <code>ifconfig</code> (Mac)</li>
-                    <li>Start server (any method)</li>
-                    <li>Share: <code>http://YOUR-IP:8000</code></li>
-                    <li>Example: <code>http://192.168.1.45:8000</code></li>
-                </ol>
-                <div class="alert alert-info">
-                    <strong>Note:</strong> Both must be on SAME WiFi!
-                </div>
-            </div>
-        </section>
-
-        <!-- ========== SECTION 11: PRO TIPS ========== -->
-        <section id="tips" class="content-section">
-            <h2>💡 Pro Tips from Winners</h2>
-
-            <div class="tips-grid-modern">
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">🎯</div>
-                    <h4>Start Simple</h4>
-                    <p>1 working feature beats 10 broken ones</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">💾</div>
-                    <h4>Commit Often</h4>
-                    <p>Git save every hour minimum</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">😴</div>
-                    <h4>Sleep 4+ Hours</h4>
-                    <p>Tired brain = bad code</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">🤝</div>
-                    <h4>Help Others</h4>
-                    <p>Talk to other teams, share ideas</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">⏰</div>
-                    <h4>Time Buffer</h4>
-                    <p>Leave 2 hours for bugs</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">😊</div>
-                    <h4>Smile in Demo</h4>
-                    <p>Confidence > perfection</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">📸</div>
-                    <h4>Take Screenshots</h4>
-                    <p>Backup if demo breaks</p>
-                </div>
-                <div class="tip-card-modern">
-                    <div class="tip-emoji">🔍</div>
-                    <h4>Google Everything</h4>
-                    <p>Stack Overflow is your friend</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>🚨 When Everything Breaks</h3>
-                <div class="emergency-plan-modern">
-                    <div class="emergency-step-modern">
-                        <strong>1. BREATHE</strong>
-                        <p>Panicking wastes time</p>
-                    </div>
-                    <div class="emergency-step-modern">
-                        <strong>2. RESTORE</strong>
-                        <code>git log → git checkout [old-commit]</code>
-                    </div>
-                    <div class="emergency-step-modern">
-                        <strong>3. SIMPLIFY</strong>
-                        <p>Show what DOES work</p>
-                    </div>
-                    <div class="emergency-step-modern">
-                        <strong>4. BE HONEST</strong>
-                        <p>"We learned X from Y challenge"</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <h3>📊 What Judges Look For</h3>
-                <div class="judge-grid">
-                    <div class="judge-item">
-                        <div class="percentage">40%</div>
-                        <p>Solves real problem</p>
-                    </div>
-                    <div class="judge-item">
-                        <div class="percentage">30%</div>
-                        <p>Actually works</p>
-                    </div>
-                    <div class="judge-item">
-                        <div class="percentage">20%</div>
-                        <p>Good presentation</p>
-                    </div>
-                    <div class="judge-item">
-                        <div class="percentage">10%</div>
-                        <p>Technical complexity</p>
-                    </div>
-                </div>
-                <div class="alert alert-warning">
-                    <strong>Notice:</strong> Pretty UI is NOT top priority!
-                </div>
-            </div>
-        </section>
-
+        </div>
     </main>
 
     <!-- FOOTER -->
-    <footer>
-        <div class="container">
-            <p>Made with ❤️ for DevClash Hackathon 2024</p>
-            <p>Remember: Done is better than perfect! 🚀</p>
-        </div>
+    <footer class="game-footer">
+        <p>🎮 Made for DevClash 2024 | Start your quest now!</p>
     </footer>
-
-    <!-- FLOATING ACTION BUTTON -->
-    <button id="backToTop" class="fab" title="Back to Top">↑</button>
 
     <script src="script.js"></script>
 </body>
