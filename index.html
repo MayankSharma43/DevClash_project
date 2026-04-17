@@ -71,12 +71,10 @@
             <div class="card">
                 <h3>Step 1: Create Project Folder</h3>
                 <div class="code-block">
-                    <code>
-# Open Terminal/Command Prompt<br>
-cd Desktop<br>
-mkdir devclash-project<br>
-cd devclash-project
-                    </code>
+                    <code># Open Terminal/Command Prompt
+cd Desktop
+mkdir devclash-project
+cd devclash-project</code>
                     <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
                 <p class="hint">💡 Or just create a folder "devclash-project" on Desktop using mouse!</p>
@@ -85,11 +83,9 @@ cd devclash-project
             <div class="card">
                 <h3>Step 2: Initialize Git</h3>
                 <div class="code-block">
-                    <code>
-git init<br>
-git config --global user.name "Your Name"<br>
-git config --global user.email "your@email.com"
-                    </code>
+                    <code>git init
+git config --global user.name "Your Name"
+git config --global user.email "your@email.com"</code>
                     <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
                 <p class="hint">💡 Replace "Your Name" and email with your actual details</p>
@@ -98,30 +94,17 @@ git config --global user.email "your@email.com"
             <div class="card">
                 <h3>Step 3: Create Files</h3>
                 <div class="code-block">
-                    <code>
-# Windows:<br>
-type nul > index.html<br>
-type nul > style.css<br>
-type nul > script.js<br>
-type nul > README.md<br><br>
+                    <code># Windows:
+type nul > index.html
+type nul > style.css
+type nul > script.js
+type nul > README.md
 
-# Mac/Linux:<br>
-touch index.html style.css script.js README.md
-                    </code>
+# Mac/Linux:
+touch index.html style.css script.js README.md</code>
                     <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
                 <p class="hint">💡 Or create files in VS Code: File → New File</p>
-            </div>
-
-            <div class="card">
-                <h3>Step 4: First Commit</h3>
-                <div class="code-block">
-                    <code>
-git add .<br>
-git commit -m "Initial commit - created project structure"
-                    </code>
-                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                </div>
             </div>
 
             <div class="alert alert-success">
@@ -131,108 +114,71 @@ git commit -m "Initial commit - created project structure"
 
         <!-- SECTION 3: WORKFLOW -->
         <section id="workflow" class="content-section">
-            <h2>💻 Hourly Workflow</h2>
+            <h2>💻 Hourly Workflow Timeline</h2>
 
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 0</div>
-                    <div class="timeline-content">
-                        <h3>🏁 Arrival & Setup</h3>
-                        <ul>
-                            <li>Plug in laptop, charger, LAN converter</li>
-                            <li>Test internet connection</li>
-                            <li>Open VS Code, browser, group chat</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Hour 0: Arrival & Setup</h3>
+                <ul>
+                    <li>Plug in laptop, charger, LAN converter</li>
+                    <li>Test internet connection</li>
+                    <li>Open VS Code, browser, group chat</li>
+                </ul>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 1</div>
-                    <div class="timeline-content">
-                        <h3>🧠 Brainstorm</h3>
-                        <ul>
-                            <li>What problem will you solve?</li>
-                            <li>What tech do you know?</li>
-                            <li>Pick ONE simple idea</li>
-                            <li>Divide tasks among team</li>
-                        </ul>
-                        <div class="alert alert-info">
-                            <strong>Golden Rule:</strong> Simple working project > Complex broken project
-                        </div>
-                    </div>
+            <div class="card">
+                <h3>Hour 1: Brainstorm</h3>
+                <ul>
+                    <li>What problem will you solve?</li>
+                    <li>What tech do you know?</li>
+                    <li>Pick ONE simple idea</li>
+                    <li>Divide tasks among team</li>
+                </ul>
+                <div class="alert alert-info">
+                    <strong>Golden Rule:</strong> Simple working project > Complex broken project
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 2-6</div>
-                    <div class="timeline-content">
-                        <h3>⚡ Build Core Features</h3>
-                        <ul>
-                            <li>Build MAIN feature first (even if ugly)</li>
-                            <li>Test every hour</li>
-                            <li>Commit to Git every hour</li>
-                            <li>Don't add extra features yet!</li>
-                        </ul>
-                        <div class="code-block">
-                            <code>
-# Every hour do this:<br>
-git add .<br>
-git commit -m "Added [feature name]"<br>
-git push
-                            </code>
-                            <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
-                        </div>
-                    </div>
+            <div class="card">
+                <h3>Hour 2-6: Build Core Features</h3>
+                <ul>
+                    <li>Build MAIN feature first (even if ugly)</li>
+                    <li>Test every hour</li>
+                    <li>Commit to Git every hour</li>
+                </ul>
+                <div class="code-block">
+                    <code># Every hour do this:
+git add .
+git commit -m "Added [feature name]"
+git push</code>
+                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 7-8</div>
-                    <div class="timeline-content">
-                        <h3>🎨 Make It Look Good</h3>
-                        <ul>
-                            <li>Add CSS styling</li>
-                            <li>Use colors, fonts, spacing</li>
-                            <li>Make it mobile-responsive</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Hour 7-8: Make It Look Good</h3>
+                <ul>
+                    <li>Add CSS styling</li>
+                    <li>Use colors, fonts, spacing</li>
+                    <li>Make it mobile-responsive</li>
+                </ul>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 9-10</div>
-                    <div class="timeline-content">
-                        <h3>🧪 Test & Debug</h3>
-                        <ul>
-                            <li>Click EVERY button</li>
-                            <li>Test on different browsers</li>
-                            <li>Try to break it (enter weird data)</li>
-                            <li>Fix critical bugs only</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Hour 9-10: Test & Debug</h3>
+                <ul>
+                    <li>Click EVERY button</li>
+                    <li>Test on different browsers</li>
+                    <li>Fix critical bugs only</li>
+                </ul>
+            </div>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 11</div>
-                    <div class="timeline-content">
-                        <h3>🎤 Prepare Presentation</h3>
-                        <ul>
-                            <li>Create slides (Google Slides/PPT)</li>
-                            <li>Practice demo 3 times</li>
-                            <li>Prepare for Q&A</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker">Hour 12</div>
-                    <div class="timeline-content">
-                        <h3>🚀 Submit!</h3>
-                        <ul>
-                            <li>Final Git commit & push</li>
-                            <li>Take screenshots</li>
-                            <li>Update README.md</li>
-                            <li>Submit before deadline!</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="card">
+                <h3>Hour 11: Prepare Presentation</h3>
+                <ul>
+                    <li>Create slides (Google Slides/PPT)</li>
+                    <li>Practice demo 3 times</li>
+                    <li>Prepare for Q&A</li>
+                </ul>
             </div>
         </section>
 
@@ -241,9 +187,9 @@ git push
             <h2>🌿 Git Commands Cheat Sheet</h2>
 
             <div class="card">
-                <h3>Basic Commands (Use These!)</h3>
+                <h3>Essential Git Commands</h3>
                 
-                <div class="command-grid">
+                <div class="command-list">
                     <div class="command-item">
                         <code>git status</code>
                         <p>Check what changed</p>
@@ -254,7 +200,7 @@ git push
                     </div>
                     <div class="command-item">
                         <code>git commit -m "message"</code>
-                        <p>Save changes</p>
+                        <p>Save changes with description</p>
                     </div>
                     <div class="command-item">
                         <code>git push</code>
@@ -262,7 +208,7 @@ git push
                     </div>
                     <div class="command-item">
                         <code>git log</code>
-                        <p>View history</p>
+                        <p>View commit history</p>
                     </div>
                     <div class="command-item">
                         <code>git diff</code>
@@ -273,54 +219,35 @@ git push
 
             <div class="card">
                 <h3>The Git Workflow (Repeat Every Hour)</h3>
-                <div class="workflow-steps">
-                    <div class="step">
-                        <span class="step-number">1</span>
-                        <div class="step-content">
-                            <strong>Code for 45 minutes</strong>
-                            <p>Write your features in VS Code</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">2</span>
-                        <div class="step-content">
-                            <strong>Save & Test (10 minutes)</strong>
-                            <p>Test if everything works</p>
-                        </div>
-                    </div>
-                    <div class="step">
-                        <span class="step-number">3</span>
-                        <div class="step-content">
-                            <strong>Commit (5 minutes)</strong>
-                            <code>git add . && git commit -m "description" && git push</code>
-                        </div>
-                    </div>
+                <div class="code-block">
+                    <code># 1. Check status
+git status
+
+# 2. Stage all changes
+git add .
+
+# 3. Commit with message
+git commit -m "Describe what you did"
+
+# 4. Push to GitHub
+git push</code>
+                    <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
             </div>
 
             <div class="card">
                 <h3>🆘 Emergency Commands</h3>
                 <div class="code-block">
-                    <code>
-# Undo changes to a file<br>
-git restore filename.html<br><br>
+                    <code># Undo changes to a file
+git restore filename.html
 
-# Undo last commit (keep changes)<br>
-git reset HEAD~1<br><br>
+# Undo last commit (keep changes)
+git reset HEAD~1
 
-# See what changed in a file<br>
-git diff filename.html<br><br>
-
-# Go back to previous version<br>
-git log  # Find commit ID<br>
-git checkout [commit-id]
-                    </code>
+# See what changed in a file
+git diff filename.html</code>
                     <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
-            </div>
-
-            <div class="alert alert-danger">
-                <strong>⚠️ Common Mistake:</strong> Forgetting to commit regularly. Commit EVERY HOUR minimum!
             </div>
         </section>
 
@@ -330,24 +257,12 @@ git checkout [commit-id]
 
             <div class="card">
                 <h3>🏆 Method 1: VS Code Live Server (RECOMMENDED)</h3>
-                <div class="numbered-steps">
-                    <div class="step-box">
-                        <span class="step-num">1</span>
-                        <p>Install "Live Server" extension in VS Code</p>
-                    </div>
-                    <div class="step-box">
-                        <span class="step-num">2</span>
-                        <p>Open your project folder in VS Code</p>
-                    </div>
-                    <div class="step-box">
-                        <span class="step-num">3</span>
-                        <p>Right-click index.html → "Open with Live Server"</p>
-                    </div>
-                    <div class="step-box">
-                        <span class="step-num">4</span>
-                        <p>Browser opens at http://localhost:5500 ✅</p>
-                    </div>
-                </div>
+                <ol>
+                    <li>Install "Live Server" extension in VS Code</li>
+                    <li>Open your project folder in VS Code</li>
+                    <li>Right-click index.html → "Open with Live Server"</li>
+                    <li>Browser opens at http://localhost:5500 ✅</li>
+                </ol>
                 <div class="alert alert-success">
                     <strong>Magic:</strong> Any change you make auto-refreshes the browser!
                 </div>
@@ -356,18 +271,14 @@ git checkout [commit-id]
             <div class="card">
                 <h3>🐍 Method 2: Python Server</h3>
                 <div class="code-block">
-                    <code>
-# Navigate to project folder<br>
-cd Desktop/devclash-project<br><br>
+                    <code># Navigate to project folder
+cd Desktop/devclash-project
 
-# Start server<br>
-python -m http.server 8000<br>
-# OR<br>
-python3 -m http.server 8000<br><br>
+# Start server
+python -m http.server 8000
 
-# Open browser at:<br>
-# http://localhost:8000
-                    </code>
+# Open browser at:
+# http://localhost:8000</code>
                     <button class="copy-btn" onclick="copyCode(this)">📋 Copy</button>
                 </div>
                 <p class="hint">💡 Stop server: Press Ctrl + C</p>
@@ -375,22 +286,11 @@ python3 -m http.server 8000<br><br>
 
             <div class="card">
                 <h3>📱 Let Teammates Access Your Site</h3>
-                <div class="numbered-steps">
-                    <div class="step-box">
-                        <span class="step-num">1</span>
-                        <p>Find your IP address</p>
-                        <code>ipconfig (Windows) | ifconfig (Mac/Linux)</code>
-                    </div>
-                    <div class="step-box">
-                        <span class="step-num">2</span>
-                        <p>Start server (using any method above)</p>
-                    </div>
-                    <div class="step-box">
-                        <span class="step-num">3</span>
-                        <p>Share this URL: http://YOUR-IP:8000</p>
-                        <p class="small">Example: http://192.168.1.45:8000</p>
-                    </div>
-                </div>
+                <ol>
+                    <li>Find your IP: <code>ipconfig</code> (Windows) or <code>ifconfig</code> (Mac/Linux)</li>
+                    <li>Start server (using any method above)</li>
+                    <li>Share URL: http://YOUR-IP:8000 (Example: http://192.168.1.45:8000)</li>
+                </ol>
                 <div class="alert alert-info">
                     <strong>Note:</strong> Both devices must be on SAME WiFi network
                 </div>
@@ -401,98 +301,38 @@ python3 -m http.server 8000<br><br>
         <section id="tips" class="content-section">
             <h2>💡 Pro Tips from Hackathon Winners</h2>
 
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <div class="tip-icon">🎯</div>
-                    <h3>Start Simple</h3>
-                    <p>Build 1 working feature > 10 broken features. Complexity kills projects.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">💾</div>
-                    <h3>Commit Often</h3>
-                    <p>Save to Git every hour. When laptop crashes at 3 AM, you'll thank yourself.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">😴</div>
-                    <h3>Sleep 4+ Hours</h3>
-                    <p>Tired brain codes badly. Quick nap > energy drinks.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">🤝</div>
-                    <h3>Help Others</h3>
-                    <p>Talk to other teams. Steal ideas. Share solutions. Make friends!</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">⏰</div>
-                    <h3>Time Management</h3>
-                    <p>Leave 2 hours buffer for bugs and presentation. Demos always break.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">😊</div>
-                    <h3>Smile During Demo</h3>
-                    <p>Even if everything breaks, present confidently. Judges love effort.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">📸</div>
-                    <h3>Take Screenshots</h3>
-                    <p>If demo fails, you have backup screenshots to show.</p>
-                </div>
-
-                <div class="tip-card">
-                    <div class="tip-icon">🔍</div>
-                    <h3>Google is Your Friend</h3>
-                    <p>90% of problems already solved on Stack Overflow.</p>
-                </div>
+            <div class="card">
+                <h3>🎯 Essential Tips</h3>
+                <ul>
+                    <li><strong>Start Simple:</strong> Build 1 working feature > 10 broken features</li>
+                    <li><strong>Commit Often:</strong> Save to Git every hour minimum</li>
+                    <li><strong>Sleep 4+ Hours:</strong> Tired brain codes badly</li>
+                    <li><strong>Help Others:</strong> Talk to other teams, share solutions</li>
+                    <li><strong>Time Management:</strong> Leave 2 hours buffer for bugs</li>
+                    <li><strong>Smile During Demo:</strong> Present confidently even if things break</li>
+                    <li><strong>Take Screenshots:</strong> Backup if demo fails</li>
+                    <li><strong>Google is Your Friend:</strong> 90% of problems solved on Stack Overflow</li>
+                </ul>
             </div>
 
             <div class="card">
                 <h3>🚨 When Everything Breaks (2 Hours Before Deadline)</h3>
-                <div class="emergency-plan">
-                    <div class="emergency-step">
-                        <strong>Step 1: STAY CALM</strong>
-                        <p>Panicking wastes time. Breathe.</p>
-                    </div>
-                    <div class="emergency-step">
-                        <strong>Step 2: Restore Last Working Version</strong>
-                        <code>git log → git checkout [old-commit-id]</code>
-                    </div>
-                    <div class="emergency-step">
-                        <strong>Step 3: Cut Features</strong>
-                        <p>Show what DOES work. 1 working feature > 5 broken.</p>
-                    </div>
-                    <div class="emergency-step">
-                        <strong>Step 4: Be Honest</strong>
-                        <p>"We faced [challenge], here's what we learned" - Judges respect honesty.</p>
-                    </div>
+                <div class="alert alert-danger">
+                    <strong>Step 1:</strong> STAY CALM - Panicking wastes time<br>
+                    <strong>Step 2:</strong> Restore last working version: <code>git log → git checkout [commit-id]</code><br>
+                    <strong>Step 3:</strong> Cut features - Show what DOES work<br>
+                    <strong>Step 4:</strong> Be honest - "We faced [challenge], here's what we learned"
                 </div>
             </div>
 
             <div class="card">
                 <h3>📊 What Judges Actually Look For</h3>
-                <div class="judge-criteria">
-                    <div class="criteria-item">
-                        <strong>40%</strong>
-                        <p>Does it solve a REAL problem?</p>
-                    </div>
-                    <div class="criteria-item">
-                        <strong>30%</strong>
-                        <p>Does it actually WORK?</p>
-                    </div>
-                    <div class="criteria-item">
-                        <strong>20%</strong>
-                        <p>Quality of presentation</p>
-                    </div>
-                    <div class="criteria-item">
-                        <strong>10%</strong>
-                        <p>Technical complexity</p>
-                    </div>
-                </div>
+                <ul>
+                    <li><strong>40%</strong> - Does it solve a REAL problem?</li>
+                    <li><strong>30%</strong> - Does it actually WORK?</li>
+                    <li><strong>20%</strong> - Quality of presentation</li>
+                    <li><strong>10%</strong> - Technical complexity</li>
+                </ul>
                 <div class="alert alert-warning">
                     Notice: Pretty UI and complex tech are NOT the priority!
                 </div>
