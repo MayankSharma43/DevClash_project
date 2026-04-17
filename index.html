@@ -6,6 +6,18 @@
     <title>🎮 Hackathon Quest - Choose Your Level!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+const header = document.querySelector(".game-header");
+
+window.addEventListener("scroll", () => {
+    console.log("scrolling"); // debug
+    if (window.scrollY > 50) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+</script>
 <body class="hub-page">
     
     <!-- GAME HEADER -->
