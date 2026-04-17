@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 7 - Security Secrets</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="level-page">
+    
+    <header class="level-header">
+        <div class="level-header-content">
+            <a href="../index.html" class="back-btn">← Back to Hub</a>
+            <div class="level-title">
+                <h1>🔐 Level 7: Security Secrets</h1>
+                <p>Protect your API keys and passwords!</p>
+            </div>
+            <button class="complete-btn" data-level="7">Mark as Complete ✓</button>
+        </div>
+    </header>
+
+    <main class="level-content">
+        
+        <div class="alert-box danger">
+            <strong>🚨 CRITICAL WARNING:</strong>
+            Leak your API keys = Hackers can use your account = You get CHARGED thousands of dollars! This is NOT a joke!
+        </div>
+
+        <div class="content-card">
+            <h2>🔐 What is .env File?</h2>
+            
+            <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 2rem; border-radius: 15px; border-left: 5px solid #3b82f6; margin-top: 1.5rem;">
+                <p style="font-size: 1.1rem; font-weight: 600; color: #1e40af; margin-bottom: 1rem;">
+                    <strong>Purpose:</strong> Store secret data that should NEVER be shared publicly
+                </p>
+                
+                <div class="code-box">
+                    <code># Example .env file
+# This file should NEVER go to GitHub!
+
+API_KEY=abcd1234xyz_super_secret
+DB_PASSWORD=my_database_password_123
+JWT_SECRET=token_secret_key
+STRIPE_KEY=sk_test_123456789
+OPENAI_KEY=sk-proj-abcdefgh</code>
+                    <button class="copy-code-btn" onclick="copyCode(this)">📋 Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>❌ WRONG vs ✅ RIGHT</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
+                <div style="background: linear-gradient(135deg, #fee2e2, #fecaca); padding: 2rem; border-radius: 15px; border-left: 5px solid #ef4444;">
+                    <h3 style="color: #991b1b; margin-bottom: 1rem; font-size: 1.3rem;">❌ NEVER DO THIS</h3>
+                    <div class="code-box">
+                        <code>// script.js
+const API_KEY = "abcd1234xyz";
+
+fetch(url, { 
+  headers: { 
+    'Authorization': API_KEY 
+  }
+});</code>
+                    </div>
+                    <p style="color: #991b1b; font-weight: 700; margin-top: 1rem; background: white; padding: 1rem; border-radius: 8px;">
+                        ⚠️ Anyone can see this in your code!<br>
+                        ⚠️ If you push to GitHub = EXPOSED!<br>
+                        ⚠️ Hackers WILL find and use it!
+                    </p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #d1fae5, #a7f3d0); padding: 2rem; border-radius: 15px; border-left: 5px solid #10b981;">
+                    <h3 style="color: #065f46; margin-bottom: 1rem; font-size: 1.3rem;">✅ DO THIS INSTEAD</h3>
+                    <div class="code-box">
+                        <code>// .env file (NEVER commit this!)
+API_KEY=abcd1234xyz
+
+// script.js
+const API_KEY = process.env.API_KEY;
+
+fetch(url, { 
+  headers: { 
+    'Authorization': API_KEY 
+  }
+});</code>
+                    </div>
+                    <p style="color: #065f46; font-weight: 700; margin-top: 1rem; background: white; padding: 1rem; border-radius: 8px;">
+                        ✅ Secret stays in .env file<br>
+                        ✅ .env is ignored by Git<br>
+                        ✅ Safe and secure!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>🚫 What is .gitignore?</h2>
+            
+            <p style="font-size: 1.1rem; margin-bottom: 1.5rem;"><strong>Purpose:</strong> Tell Git which files to NEVER upload to GitHub</p>
+            
+            <div class="code-box">
+                <code># .gitignore file
+# Create this in your project root
+
+# Secret files
+.env
+.env.local
+config.json
+
+# Dependencies (too large!)
+node_modules/
+venv/
+__pycache__/
+
+# Build files (auto-generated)
+dist/
+build/
+*.log
+
+# OS files (useless)
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/</code>
+                <button class="copy-code-btn" onclick="copyCode(this)">📋 Copy</button>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>📋 What to Ignore (Common Files)</h2>
+            
+            <div style="margin-top: 1.5rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; margin-bottom: 0.8rem; border-left: 4px solid #667eea;">
+                    <code style="background: #1e293b; color: #4ade80; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700;">.env</code>
+                    <span style="color: #6b7280; font-style: italic;">Secret keys & passwords</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; margin-bottom: 0.8rem; border-left: 4px solid #667eea;">
+                    <code style="background: #1e293b; color: #4ade80; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700;">node_modules/</code>
+                    <span style="color: #6b7280; font-style: italic;">Downloaded libraries (HUGE!)</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; margin-bottom: 0.8rem; border-left: 4px solid #667eea;">
+                    <code style="background: #1e293b; color: #4ade80; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700;">dist/</code>
+                    <span style="color: #6b7280; font-style: italic;">Auto-generated build files</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; margin-bottom: 0.8rem; border-left: 4px solid #667eea;">
+                    <code style="background: #1e293b; color: #4ade80; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700;">*.log</code>
+                    <span style="color: #6b7280; font-style: italic;">Debug logs (useless)</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; background: linear-gradient(135deg, #f8f9fa, #e9ecef); border-radius: 10px; margin-bottom: 0.8rem; border-left: 4px solid #667eea;">
+                    <code style="background: #1e293b; color: #4ade80; padding: 0.5rem 1rem; border-radius: 8px; font-weight: 700;">.DS_Store</code>
+                    <span style="color: #6b7280; font-style: italic;">Mac system file (junk)</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>🛡️ Security Checklist for Hackathon</h2>
+            
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Create .env file for ALL secrets</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Create .gitignore BEFORE first commit</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Add .env to .gitignore</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>NEVER commit API keys in code</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Check GitHub after pushing (make sure .env not there!)</span>
+            </div>
+        </div>
+
+        <div class="alert-box warning">
+            <strong>⚡ GOLDEN RULE:</strong>
+            If it's SECRET, it goes in .env. If it's in .env, it goes in .gitignore. NO EXCEPTIONS!
+        </div>
+
+        <div class="content-card">
+            <h2>🚨 What If You Already Leaked a Key?</h2>
+            
+            <div style="background: linear-gradient(135deg, #fff7ed, #fed7aa); padding: 2rem; border-radius: 15px; border-left: 5px solid #f59e0b; margin-top: 1.5rem;">
+                <h3 style="color: #92400e; margin-bottom: 1rem;">Emergency Steps:</h3>
+                <ol style="color: #78350f; line-height: 2;">
+                    <li><strong>IMMEDIATELY regenerate the key</strong> (go to API provider dashboard)</li>
+                    <li><strong>Delete the key from your code</strong></li>
+                    <li><strong>Move it to .env file</strong></li>
+                    <li><strong>Add .env to .gitignore</strong></li>
+                    <li><strong>Git commit with new setup</strong></li>
+                </ol>
+                <p style="margin-top: 1rem; color: #92400e; font-weight: 700;">
+                    Note: Simply deleting from GitHub is NOT enough! The key is in commit history. You MUST regenerate it!
+                </p>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../script.js"></script>
+    <script>
+        document.querySelectorAll('.checklist-item input').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const parent = this.closest('.checklist-item');
+                if (this.checked) {
+                    parent.classList.add('checked');
+                } else {
+                    parent.classList.remove('checked');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

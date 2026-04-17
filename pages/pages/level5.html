@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 5 - File Structure</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="level-page">
+    
+    <header class="level-header">
+        <div class="level-header-content">
+            <a href="../index.html" class="back-btn">← Back to Hub</a>
+            <div class="level-title">
+                <h1>📂 Level 5: File Structure</h1>
+                <p>Organize your code like a pro!</p>
+            </div>
+            <button class="complete-btn" data-level="5">Mark as Complete ✓</button>
+        </div>
+    </header>
+
+    <main class="level-content">
+        
+        <div class="alert-box warning">
+            <strong>🔥 TRUTH:</strong>
+            Bad file structure = You'll get lost in your own code after 2 hours!
+        </div>
+
+        <div class="content-card">
+            <h2>🏗️ Basic Structure (For Simple Projects)</h2>
+            <p style="margin-bottom: 1.5rem;">Perfect for hackathons and small projects:</p>
+            
+            <div style="background: #1e293b; padding: 2rem; border-radius: 10px; font-family: 'Courier New', monospace;">
+                <div style="padding: 0.4rem 0; color: #60a5fa; font-weight: 700;">
+                    <span style="font-size: 1.2rem;">📁</span> project/
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">📄</span> index.html
+                    <span style="color: #94a3b8; font-style: italic;"> ← Main page</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🎨</span> style.css
+                    <span style="color: #94a3b8; font-style: italic;"> ← Design</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">⚡</span> script.js
+                    <span style="color: #94a3b8; font-style: italic;"> ← Functionality</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">📝</span> README.md
+                    <span style="color: #94a3b8; font-style: italic;"> ← Project info</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🚫</span> .gitignore
+                    <span style="color: #94a3b8; font-style: italic;"> ← Files to ignore</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>🏗️ Advanced Structure (With Frontend/Backend)</h2>
+            <p style="margin-bottom: 1.5rem;">When you have separate frontend and backend:</p>
+            
+            <div style="background: #1e293b; padding: 2rem; border-radius: 10px; font-family: 'Courier New', monospace;">
+                <div style="padding: 0.4rem 0; color: #60a5fa; font-weight: 700;">
+                    <span style="font-size: 1.2rem;">📁</span> project/
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #60a5fa;">
+                    <span style="font-size: 1.2rem;">📁</span> frontend/
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 4rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">📄</span> index.html
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 4rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🎨</span> style.css
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 4rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">⚡</span> script.js
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #60a5fa;">
+                    <span style="font-size: 1.2rem;">📁</span> backend/
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 4rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🐍</span> server.py
+                    <span style="color: #94a3b8; font-style: italic;"> ← Python server</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 4rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🟢</span> app.js
+                    <span style="color: #94a3b8; font-style: italic;"> ← Node.js server</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🔐</span> .env
+                    <span style="color: #94a3b8; font-style: italic;"> ← Secret keys</span>
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">🚫</span> .gitignore
+                </div>
+                <div style="padding: 0.4rem 0; padding-left: 2rem; color: #a5b4fc;">
+                    <span style="font-size: 1.2rem;">📝</span> README.md
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>💡 When You See Confusing Folders in AI Code</h2>
+            <p style="margin-bottom: 1.5rem;">Don't panic! Here's what they mean:</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem;">
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 2px solid #3b82f6;">
+                    <code style="display: block; background: #1e293b; color: #60a5fa; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.8rem; font-weight: 700;">src/</code>
+                    <strong style="color: #1e40af; display: block; margin-bottom: 0.5rem;">Source</strong>
+                    <p style="color: #1e3a8a; font-size: 0.95rem; margin: 0;">Main code lives here</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 2px solid #3b82f6;">
+                    <code style="display: block; background: #1e293b; color: #60a5fa; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.8rem; font-weight: 700;">components/</code>
+                    <strong style="color: #1e40af; display: block; margin-bottom: 0.5rem;">Reusable Parts</strong>
+                    <p style="color: #1e3a8a; font-size: 0.95rem; margin: 0;">Buttons, cards, etc.</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 2px solid #3b82f6;">
+                    <code style="display: block; background: #1e293b; color: #60a5fa; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.8rem; font-weight: 700;">utils/</code>
+                    <strong style="color: #1e40af; display: block; margin-bottom: 0.5rem;">Utilities</strong>
+                    <p style="color: #1e3a8a; font-size: 0.95rem; margin: 0;">Helper functions</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 2px solid #3b82f6;">
+                    <code style="display: block; background: #1e293b; color: #60a5fa; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.8rem; font-weight: 700;">services/</code>
+                    <strong style="color: #1e40af; display: block; margin-bottom: 0.5rem;">API Calls</strong>
+                    <p style="color: #1e3a8a; font-size: 0.95rem; margin: 0;">Talks to backend</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 2px solid #3b82f6;">
+                    <code style="display: block; background: #1e293b; color: #60a5fa; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.8rem; font-weight: 700;">node_modules/</code>
+                    <strong style="color: #1e40af; display: block; margin-bottom: 0.5rem;">Libraries</strong>
+                    <p style="color: #1e3a8a; font-size: 0.95rem; margin: 0;">Downloaded packages (DON'T TOUCH!)</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 2px solid #3b82f6;">
+                    <code style="display: block; background: #1e293b; color: #60a5fa; padding: 0.6rem; border-radius: 8px; margin-bottom: 0.8rem; font-weight: 700;">dist/</code>
+                    <strong style="color: #1e40af; display: block; margin-bottom: 0.5rem;">Distribution</strong>
+                    <p style="color: #1e3a8a; font-size: 0.95rem; margin: 0;">Final built version</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert-box success">
+            <strong>👉 Pro Tip:</strong>
+            When confused, look for <code>index.html</code>, <code>app.js</code>, or <code>main.py</code> - that's where the program starts!
+        </div>
+
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

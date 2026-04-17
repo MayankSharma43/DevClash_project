@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 6 - Frontend vs Backend</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="level-page">
+    
+    <header class="level-header">
+        <div class="level-header-content">
+            <a href="../index.html" class="back-btn">← Back to Hub</a>
+            <div class="level-title">
+                <h1>🌐 Level 6: Frontend vs Backend</h1>
+                <p>Understand how the web really works!</p>
+            </div>
+            <button class="complete-btn" data-level="6">Mark as Complete ✓</button>
+        </div>
+    </header>
+
+    <main class="level-content">
+        
+        <div class="content-card">
+            <h2>🎭 The Simple Analogy</h2>
+            
+            <div style="display: flex; align-items: center; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-top: 1.5rem;">
+                <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 2rem; border-radius: 15px; border: 3px solid #3b82f6; flex: 1; min-width: 280px;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🏪</div>
+                    <h3 style="color: #1e40af; text-align: center; margin-bottom: 1rem; font-size: 1.4rem;">Frontend = Store Front</h3>
+                    <p style="text-align: center; margin-bottom: 1rem; font-weight: 600;">What customers SEE and INTERACT with</p>
+                    <ul style="list-style: none; padding: 0; color: #1e3a8a;">
+                        <li style="padding: 0.5rem 0;">✓ Display of products</li>
+                        <li style="padding: 0.5rem 0;">✓ Shopping cart</li>
+                        <li style="padding: 0.5rem 0;">✓ Pretty design</li>
+                        <li style="padding: 0.5rem 0;">✓ Buttons & forms</li>
+                    </ul>
+                </div>
+
+                <div style="font-size: 3rem; color: #667eea;">↔️</div>
+
+                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 2rem; border-radius: 15px; border: 3px solid #10b981; flex: 1; min-width: 280px;">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🏭</div>
+                    <h3 style="color: #065f46; text-align: center; margin-bottom: 1rem; font-size: 1.4rem;">Backend = Warehouse</h3>
+                    <p style="text-align: center; margin-bottom: 1rem; font-weight: 600;">Behind-the-scenes LOGIC and STORAGE</p>
+                    <ul style="list-style: none; padding: 0; color: #064e3b;">
+                        <li style="padding: 0.5rem 0;">✓ Inventory database</li>
+                        <li style="padding: 0.5rem 0;">✓ Payment processing</li>
+                        <li style="padding: 0.5rem 0;">✓ User accounts</li>
+                        <li style="padding: 0.5rem 0;">✓ Business logic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>🖥️ Frontend Technologies</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center; border: 3px solid #e2e8f0; transition: all 0.3s;">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">📄</span>
+                    <h3 style="color: #667eea; font-size: 1.3rem; margin-bottom: 0.5rem;">HTML</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Structure (bones)</p>
+                    <code style="display: block; background: #1e293b; color: #4ade80; padding: 0.5rem; border-radius: 8px; font-size: 0.9rem;">&lt;button&gt;Click&lt;/button&gt;</code>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center; border: 3px solid #e2e8f0;">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">🎨</span>
+                    <h3 style="color: #667eea; font-size: 1.3rem; margin-bottom: 0.5rem;">CSS</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Design (skin)</p>
+                    <code style="display: block; background: #1e293b; color: #4ade80; padding: 0.5rem; border-radius: 8px; font-size: 0.9rem;">button { color: blue; }</code>
+                </div>
+
+                <div style="background: white; padding: 2rem; border-radius: 15px; text-align: center; border: 3px solid #e2e8f0;">
+                    <span style="font-size: 3rem; display: block; margin-bottom: 1rem;">⚡</span>
+                    <h3 style="color: #667eea; font-size: 1.3rem; margin-bottom: 0.5rem;">JavaScript</h3>
+                    <p style="color: #6b7280; margin-bottom: 1rem;">Interaction (brain)</p>
+                    <code style="display: block; background: #1e293b; color: #4ade80; padding: 0.5rem; border-radius: 8px; font-size: 0.9rem;">button.onclick = ...</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>⚙️ Backend Technologies</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                <div style="background: linear-gradient(135deg, #d1fae5, #a7f3d0); padding: 1.5rem; border-radius: 10px; text-align: center; border: 3px solid #10b981;">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">🟢</span>
+                    <h3 style="color: #065f46; font-size: 1.2rem; margin-bottom: 0.5rem;">Node.js</h3>
+                    <p style="color: #064e3b; margin: 0; font-size: 0.9rem;">JavaScript for servers</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #dbeafe, #bfdbfe); padding: 1.5rem; border-radius: 10px; text-align: center; border: 3px solid #3b82f6;">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">🐍</span>
+                    <h3 style="color: #1e40af; font-size: 1.2rem; margin-bottom: 0.5rem;">Python</h3>
+                    <p style="color: #1e3a8a; margin: 0; font-size: 0.9rem;">Flask / Django</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 1.5rem; border-radius: 10px; text-align: center; border: 3px solid #f59e0b;">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">☕</span>
+                    <h3 style="color: #92400e; font-size: 1.2rem; margin-bottom: 0.5rem;">Java</h3>
+                    <p style="color: #78350f; margin: 0; font-size: 0.9rem;">Spring Boot</p>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #fce7f3, #fbcfe8); padding: 1.5rem; border-radius: 10px; text-align: center; border: 3px solid #ec4899;">
+                    <span style="font-size: 2.5rem; display: block; margin-bottom: 0.8rem;">🐘</span>
+                    <h3 style="color: #9f1239; font-size: 1.2rem; margin-bottom: 0.5rem;">PHP</h3>
+                    <p style="color: #881337; margin: 0; font-size: 0.9rem;">Laravel</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>🔁 How They Connect (The Flow)</h2>
+            
+            <div style="display: flex; align-items: center; gap: 1rem; overflow-x: auto; padding: 1rem; background: #f9fafb; border-radius: 10px; margin-top: 1.5rem;">
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1.5rem; border-radius: 10px; min-width: 120px; text-align: center; font-weight: 700; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    Frontend<br><small style="font-size: 0.8rem; opacity: 0.9;">User sees</small>
+                </div>
+                <div style="color: #667eea; font-weight: 700; white-space: nowrap;">→ API Call →</div>
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1.5rem; border-radius: 10px; min-width: 120px; text-align: center; font-weight: 700; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    Backend<br><small style="font-size: 0.8rem; opacity: 0.9;">Processes</small>
+                </div>
+                <div style="color: #667eea; font-weight: 700; white-space: nowrap;">→ Query →</div>
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1.5rem; border-radius: 10px; min-width: 120px; text-align: center; font-weight: 700; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    Database<br><small style="font-size: 0.8rem; opacity: 0.9;">Stores data</small>
+                </div>
+                <div style="color: #667eea; font-weight: 700; white-space: nowrap;">← Returns Data ←</div>
+                <div style="background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 1.5rem; border-radius: 10px; min-width: 120px; text-align: center; font-weight: 700; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+                    Frontend<br><small style="font-size: 0.8rem; opacity: 0.9;">Shows result</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>🧪 Real Example: Login Flow</h2>
+            
+            <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 2rem; border-radius: 15px; border-left: 5px solid #3b82f6; margin-top: 1.5rem;">
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="color: #1e40af; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">1️⃣ Frontend:</strong>
+                    <p style="margin: 0.5rem 0; color: #1e3a8a;">User clicks "Login" button</p>
+                    <code style="display: block; background: #1e293b; color: #4ade80; padding: 1rem; border-radius: 8px; margin-top: 0.8rem; font-family: 'Courier New', monospace;">fetch('/api/login', { 
+  method: 'POST',
+  body: { email, password }
+})</code>
+                </div>
+
+                <div style="text-align: center; font-size: 2rem; color: #3b82f6; margin: 1rem 0;">↓</div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <strong style="color: #1e40af; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">2️⃣ Backend:</strong>
+                    <p style="margin: 0.5rem 0; color: #1e3a8a;">Receives request, checks database</p>
+                    <code style="display: block; background: #1e293b; color: #4ade80; padding: 1rem; border-radius: 8px; margin-top: 0.8rem; font-family: 'Courier New', monospace;">if (password matches) {
+  return success_token
+} else {
+  return error
+}</code>
+                </div>
+
+                <div style="text-align: center; font-size: 2rem; color: #3b82f6; margin: 1rem 0;">↓</div>
+
+                <div>
+                    <strong style="color: #1e40af; font-size: 1.1rem; display: block; margin-bottom: 0.5rem;">3️⃣ Frontend:</strong>
+                    <p style="margin: 0.5rem 0; color: #1e3a8a;">Receives response, shows dashboard</p>
+                    <code style="display: block; background: #1e293b; color: #4ade80; padding: 1rem; border-radius: 8px; margin-top: 0.8rem; font-family: 'Courier New', monospace;">if (success) {
+  redirect('/dashboard')
+} else {
+  show('Wrong password!')
+}</code>
+                </div>
+            </div>
+        </div>
+
+        <div class="alert-box success">
+            <strong>💡 Key Insight:</strong>
+            Frontend = What users see and click. Backend = The brain that does calculations and stores data. They talk via APIs!
+        </div>
+
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

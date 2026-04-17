@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1 - Pre-Hackathon Checklist</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="level-page">
+    
+    <!-- LEVEL HEADER -->
+    <header class="level-header">
+        <div class="level-header-content">
+            <a href="../index.html" class="back-btn">
+                ← Back to Hub
+            </a>
+            
+            <div class="level-title">
+                <h1>📋 Level 1: Pre-Hackathon Checklist</h1>
+                <p>Gather your items before the quest begins!</p>
+            </div>
+            
+            <button class="complete-btn" data-level="1">
+                Mark as Complete ✓
+            </button>
+        </div>
+    </header>
+
+    <!-- LEVEL CONTENT -->
+    <main class="level-content">
+        
+        <div class="content-card">
+            <h2>🎒 What to Bring</h2>
+            <div class="checklist-item">
+                <input type="checkbox"> 
+                <span>Laptop + Charger</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>USB to LAN Converter (CRITICAL!)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>College ID / Valid ID Card</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Your Lunch (Dinner provided)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Water bottle & Snacks</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Headphones</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Power bank (optional)</span>
+            </div>
+        </div>
+
+        <div class="content-card">
+            <h2>💻 Software to Install NOW</h2>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>VS Code (code.visualstudio.com)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Git (git-scm.com)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>GitHub Account (github.com)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Live Server Extension (in VS Code)</span>
+            </div>
+            <div class="checklist-item">
+                <input type="checkbox">
+                <span>Python (python.org) - Optional</span>
+            </div>
+        </div>
+
+        <div class="alert-box warning">
+            <strong>⚠️ CRITICAL WARNING:</strong>
+            Test your USB to LAN converter TONIGHT! Don't wait until hackathon day!
+        </div>
+
+        <div class="content-card">
+            <h2>✅ Quest Complete!</h2>
+            <p>Once you've checked all items, mark this level as complete and unlock the next challenge!</p>
+        </div>
+
+    </main>
+
+    <script src="../script.js"></script>
+    <script>
+        // Auto-check functionality
+        document.querySelectorAll('.checklist-item input').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                const parent = this.closest('.checklist-item');
+                if (this.checked) {
+                    parent.classList.add('checked');
+                } else {
+                    parent.classList.remove('checked');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
