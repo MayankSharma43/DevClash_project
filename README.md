@@ -22,5 +22,3 @@ Example:
 - **Storage:** LocalStorage (browser-based)
 - **Hosting:** GitHub Pages
 
-## 🚀 How to Run
-1. Clone this repository:
